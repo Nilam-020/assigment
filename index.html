@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--This line is for HTML 5-->
+<html lang="en" dir="ltr">
+<!--head starts-->
+<head>
+<!--this enables the unicode feature-->
+<title>Home</title>
+<meta charset="utf-8">
+<!--webpage title starts and ends-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--This makes the total width equal to the device width-->
+
+<link rel="shortcut icon" href="images/favicon.png"/>
+<link type="text/css" rel="stylesheet" href="css/master.css"/>
+<!--link main css in html-->
+</head>
+<!--head ends-->
+<!--starts of body-->
+<body>
+ 
+
+<!--header starts-->
+<header>
+  <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="logo" title="budgetflights" /></a> </div>
+  <div class="lang">
+    <ul>
+      <li>Nepal-English</li>
+    </ul>
+  </div>
+  <!--div class ends--> 
+</header>
+<!--header ends-->
+
+<div class="menubar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="status.html">Flight Status</a></li>
+    <li><a href="flight.html">Flight Information</a></li>
+    <li><a href="mobile.html">Mobile Apps</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <li><a href="check.html">Check-in</a></li>
+    <li><a href="support.html">Support</a></li>
+  </ul>
+</div>
+<!--menu bar ends here-->
+<section class="container-1"> 
+  <!--form for booking flights-->
+  <div class="nav-slider"> <img src="images/navimg.png" alt="navpic" title="nav-airplane"/> </div>
+  <div class="flight-booking">
+    <h2>Book a flight</h2>
+    <form method="get" action="status.html">
+      <p>
+        <label>flying from</label>
+        <input type="text" name="airport" placeholder="flying from">
+      </p>
+      <p>
+        <label>flying to</label>
+        <input type="text" name="countryairport" placeholder="Flying to">
+      </p>
+      <p>
+        <label>Adult(18 above)</label>
+        <label>Infants(below 2 years)</label>
+        <br/>
+        <input type="checkbox" name="checkbox">
+      </p>
+      <p>
+        <label>Departure</label>
+        <input type="datetime-local" name="departure-time">
+      </p>
+      <p>
+        <label>Arrival</label>
+        <input type="datetime-local" name="arrival-time">
+      </p>
+      <p>
+        <input type="submit" name="Find-flights" value="Find Flights">
+      </p>
+    </form>
+  </div>
+  <div class="mid-img">
+    <h2>Where We Fly</h2>
+    <ul>
+      <li><img src="images/logo.png" alt="image" title="mid"/>Belgium</li>
+      <li><img src="images/logo.png" alt="image" title="mid"/>Austria</li>
+      <li><img src="images/logo.png" alt="image" title="mid"/>United Kingdom</li>
+      <li><img src="images/logo.png"  alt="image" title="mid"/>Germany</li>
+    </ul>
+  </div>
+</section>
+<div class="footer-down">
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <ul>
+          <li>BudgetFlights, Trade Tower, A21
+            United Kingdom.</li>
+            <li>P.O. Box: 0000</li>
+          <li><img src="images/mail.png" alt="mail">   info@budgetflights.com</li>
+          <li><img src="images/phone.png" alt="phone"> (+1)000000</li>
+          <li><img src="images/fax.png" alt="fax">     (+1)100000</li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <h3>Find us on</h3>
+        <ul>
+          <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook"/></a></li>
+          <li><a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram"/></a></li>
+          <li><a href="https://www.youtube.com"><img src="images/youtube.png" alt="youtube"/></a></li>
+          <li><a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter"/></a></li>
+        </ul>
+      </div>
+      <div class="newsletter">
+        <h3> Subscribe newsletter for offers</h3>
+      <form method="post" action="flight.html">
+          <p><label>Full Name</label><br/><input type="text" name="Full-name"></p>
+          <p><label>Email</label><br/><input type="Email" name="Email"></p>
+          <p><input type="submit" name="Subscribe-button" value="Subscribe"></p>
+        </form>
+      </div>
+    </div>
+
+<!--This is a footer section all tags goes for footer-->
+
+<footer>
+  <p>Copyright &copy; Budgetflights 2018. All right reserved. </p>
+</footer>
+</body>
+<!--body ends-->
+</html>
+<!--html close-->
