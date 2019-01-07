@@ -22,11 +22,17 @@
 <!--header starts-->
 <header>
   <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="logo" title="budgetflights" /></a> </div>
-  <div class="lang">
-    <ul>
-      <li>Nepal-English</li>
-    </ul>
-  </div>
+  <div class="search-1">
+ 	<form method="post" action="mobile.html">
+		<p><input type="text" name="advance-search" required="required">  <input type="submit" name="submit" value="Search"> </p>
+ 	</form>
+ 	<select class="lang">
+ 		<option value="austria">Austria-English</option>
+ 		<option value="austria">Germany-English</option>
+ 		<option value="austria">England-English</option>
+ 		<option value="austria">Scotland-English</option>
+ 	</select>
+ </div>
   <!--div class ends--> 
 </header>
 <!--header ends-->
@@ -34,85 +40,116 @@
 <div class="menubar">
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="status.html">Flight Status</a></li>
+    <li><a href="status.html">Arrival and Departures</a></li>
     <li><a href="flight.html">Flight Information</a></li>
     <li><a href="mobile.html">Mobile Apps</a></li>
+    <li><a href="about.html">About Us</a></li>
     <li><a href="explore.html">Explore</a></li>
-    <li><a href="check.html">Check-in</a></li>
-    <li><a href="support.html">Support</a></li>
+    <li><a href="check.html">Check-in Information</a></li>
+    <li><a href="support.html">FAQ/Help</a>
+         <ul>
+            <li><a href="support.html">Enquiry</a></li>
+            <li><a href="mobile.html">Downloads</a></li>
+          </ul>
+    </li>
   </ul>
 </div>
 <!--menu bar ends here-->
-<section class="container-1"> 
+<div class="container-1"> 
   <!--form for booking flights-->
-  <div class="nav-slider"> <img src="images/navimg.png" alt="navpic" title="nav-airplane"/> </div>
-  <div class="flight-booking">
-    <h2>Book a flight</h2>
-    <form method="get" action="status.html">
-      <p>
-        <label>flying from</label>
-        <input type="text" name="airport" placeholder="flying from">
-      </p>
-      <p>
-        <label>flying to</label>
-        <input type="text" name="countryairport" placeholder="Flying to">
-      </p>
-      <p>
-        <label>Adult(18 above)</label>
-        <label>Infants(below 2 years)</label>
-        <br/>
-        <input type="checkbox" name="checkbox">
-      </p>
-      <p>
-        <label>Departure</label>
-        <input type="datetime-local" name="departure-time">
-      </p>
-      <p>
-        <label>Arrival</label>
-        <input type="datetime-local" name="arrival-time">
-      </p>
-      <p>
-        <input type="submit" name="Find-flights" value="Find Flights">
-      </p>
-    </form>
+  <div class="nav-slider"> 
+  	<img src="images/navimg.png" alt="navpic" title="nav-airplane"/> 
   </div>
-  <div class="mid-img">
-    <h2>Where We Fly</h2>
-    <ul>
-      <li><img src="images/logo.png" alt="image" title="mid"/>Belgium</li>
-      <li><img src="images/logo.png" alt="image" title="mid"/>Austria</li>
-      <li><img src="images/logo.png" alt="image" title="mid"/>United Kingdom</li>
-      <li><img src="images/logo.png"  alt="image" title="mid"/>Germany</li>
-    </ul>
+ <div class="flight-booking">
+    <h3 class="book-heading">
+     <span>Search & Book</span>
+      BudgetFlights
+     </h3>
+    	<form method="get" action="status.html">
+      	<p>
+			<label>From</label><br/>
+			<input type="text" name="airport" placeholder="Country,city or airport" required="required">
+			<label>To</label>
+			<input type="text" name="countryairport" placeholder="Country,city or airport" required="required">
+		  </p>
+		  <input type="radio" name="trip-type" value="return" checked="checked"><label>Return Flight</label>
+		   <input type="radio" name="trip-type" value="outbound" checked="checked"> <label>Outbound Flight</label>
+		  <p>
+			<label>Departure</label>
+			<input type="datetime-local" name="departure-time">
+      <label>Arrival</label>
+      <input type="datetime-local" name="arrival-time">
+		  </p>
+		  <p>
+			<label>Arrival</label>
+			<input type="datetime-local" name="arrival-time">
+		  </p>
+		  
+		  <p>
+			<input type="submit" name="Find-flights" value="Find Flights">
+		  </p>
+		</form>
+	  </div>
+	</div>
+	
+<!--Destination elements of index page starts from here-->
+ <div class="destinationimg">
+     <h2 class="index-context">Destinations <span>To Fly</span></h2>
   </div>
-</section>
+    <div class="images">
+      <div class="destinationimg1">
+        <a href="flight.html"><img src="images/country/France.jpg" alt="France"></a>
+        <h3 class="info1"><a href="flight.html">Paris,France</a></h3>
+        <p>Paris is a capital of France. Governing body of several departments are situated here.
+        Paris is the second expensive city in the World. </p>
+      </div>
+      <div class="destinationimg2">
+        <a href="flight.html"><img src="images/country/Belgium.jpg" alt="Belgium"/></a>
+        <h3 class="info1"><a href="flight.html">Brussels,Belgium</a></h3>
+        <p>Brussels is the largest city and capital of Belgium.</p>
+      </div>
+      <div class="destinationimg3">
+        <a href="flight.html"><img src="images/country/Germany.jpg" alt="Germany"></a>
+        <h3 class="info1"><a href="flight.html">Berlin,Germany</a></h3>
+        <p>Berlin is the Capital city of Germany and most visited city of europe.</p>
+      </div>
+    </div>
+
+ <div class="social-media">
+       		<div class="social-media-connect">
+       			<h4>Lets stay connected</h4>
+        	</div>
+         <div class="icon">
+			  <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook"/></a>
+			  <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram"/></a>
+			  <a href="https://www.youtube.com"><img src="images/youtube.png" alt="youtube"/></a>
+			  <a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter"/></a>
+          </div>
+      </div>
+<!--Destination elements of index page starts from here-->
 <div class="footer-down">
+     <div class="privacy">
+     	<h4>Information Service</h4>
+     		<p><a href="#">Privacy Policy</a></p>
+     		<p><a href="Contact.html">Support</a></p>
+     		<p><a href="#">Services</a></p>
+     		<p><a href="#">Legal</a></p>
+     		<p><a href="#">Baggage handling</a></p>
+     </div>
       <div class="contact-info">
-        <h3>Contact Info</h3>
-        <ul>
-          <li>BudgetFlights, Trade Tower, A21
-            United Kingdom.</li>
-            <li>P.O. Box: 0000</li>
-          <li><img src="images/mail.png" alt="mail">   info@budgetflights.com</li>
-          <li><img src="images/phone.png" alt="phone"> (+1)000000</li>
-          <li><img src="images/fax.png" alt="fax">     (+1)100000</li>
-        </ul>
+        <h4>Contact Info</h4>
+        <p>BudgetFlights, Trade Tower, A21 United Kingdom. </p>
+		  <p> P.O. Box: 0000</p>
+		  <p>+1-000000,111111</p>
+		  <p> info@budgetflights.com</p>
       </div>
-      <div class="social-media">
-        <h3>Find us on</h3>
-        <ul>
-          <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook"/></a></li>
-          <li><a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram"/></a></li>
-          <li><a href="https://www.youtube.com"><img src="images/youtube.png" alt="youtube"/></a></li>
-          <li><a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter"/></a></li>
-        </ul>
-      </div>
+      
       <div class="newsletter">
-        <h3> Subscribe newsletter for offers</h3>
+        <h4> Subscribe newsletter for latest offers</h4>
       <form method="post" action="flight.html">
-          <p><label>Full Name</label><br/><input type="text" name="Full-name"></p>
-          <p><label>Email</label><br/><input type="Email" name="Email"></p>
+          <p><label>First Name</label><br/><input type="text" name="Full-name" placeholder="john" required="required"></p>
+          <p><label>Last Name</label><br/><input type="text" name="Last-name" placeholder="May" required="required"></p>
+          <p><label>Email</label><br/><input type="Email" name="Email" placeholder="example@email.com" required="required"></p>
           <p><input type="submit" name="Subscribe-button" value="Subscribe"></p>
         </form>
       </div>

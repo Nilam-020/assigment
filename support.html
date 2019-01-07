@@ -1,96 +1,147 @@
-<!--This line is for HTML 5-->
 <!DOCTYPE html>
+<!--This line is for HTML 5-->
 <html lang="en" dir="ltr">
 <!--head starts-->
-  <head>
-    <!--this enables the unicode feature-->
-    <meta charset="utf-8">
-    <!--webpage title starts and ends-->
-    <title>Home</title>
-    <!--link main css in html-->
-    <link rel="shortcut icon" href="images/favicon.png"/>
-    <link type="text/css" rel="stylesheet" href="css/master.css"/>
-  </head>
-  <!--head ends-->
-  <!--starts of body-->
-  <body>
-  <!--header starts-->
-    <header>
-  <!--div class starts-->
-     
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="logo" title="budgetflights" /></a>
-      </div>
-       <div class="lang">
-        <ul>
-          <li>Nepal-English</li>
-        </ul>
-        
-      </div>
-    <!--div class ends-->
+<head>
+<!--this enables the unicode feature-->
+<title>Mobile Application</title>
+<meta charset="utf-8">
+<!--webpage title starts and ends-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--This makes the total width equal to the device width-->
 
+<link rel="shortcut icon" href="images/favicon.png"/>
+<link type="text/css" rel="stylesheet" href="css/master.css"/>
+<!--link main css in html-->
+</head>
+<!--head ends-->
+<!--starts of body-->
+<body>
+ 
 
-    </header>
-  <!--header ends-->
-  <!--<div class="logo">
-        <a href="index.html"><img src="images/master.png" alt="logo" title="budgetflights" /></a>
-      </div>-->
-      <div class="main">
-      
-          <div class="menubar">
-          <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="about.html">About Us</a></li>
-           <li><a href="status.html">Flight Status</a></li>
-           <li><a href="flight.html">Flight Information</a></li>
-           <li><a href="mobile.html">Mobile Apps</a></li>
-           <li><a href="explore.html">Explore</a></li>
-           <li><a href="check.html">Check-in</a></li>
-           <li><a href="support.html">Support</a></li>
+<!--header starts-->
+<header>
+  <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="logo" title="budgetflights" /></a> </div>
+  <div class="search-1">
+  <form method="post" action="mobile.html">
+    <p><input type="text" name="advance-search">  <input type="submit" name="submit" value="Search"> </p>
+  </form>
+  <select class="lang">
+    <option value="austria">Austria-English</option>
+    <option value="austria">Germany-English</option>
+    <option value="austria">England-English</option>
+    <option value="austria">Scotland-English</option>
+  </select>
+ </div>
+  <!--div class ends--> 
+</header>
+<!--header ends-->
+
+<div class="menubar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="status.html">Arrival and Departures</a></li>
+    <li><a href="flight.html">Flight Information</a></li>
+    <li><a href="mobile.html">Mobile Apps</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <li><a href="check.html">Check-in Information</a></li>
+    <li><a href="support.html">FAQ/Help</a>
+         <ul>
+            <li><a href="support.html">Enquiry</a></li>
+            <li><a href="mobile.html">Downloads</a></li>
           </ul>
+  </ul>
+</div>
+      <!--menu bar ends here-->
+  <section class="FAQ">
+    <div class="help">
+      <h2>Frequently Asked Questions/Answers</h2>
+    </div>
+      <div class="question">
+        <div class="mobile">
+          <h4 class="mobileq">Mobile Application</h4>
+          <a class="a" href="mobile.html"><p class="mobile1">1. What kind of Support the app gives?</p></a>
+          <a class="a" href="mobile.html"><p class="mobile1">2. Can I pay online for tickets?</p></a>
+        </div>
+        <div class="Flight-Booking1">
+          <h4 class="mobileq">Flight Booking</h4>
+          <a class="a" href="mobile.html"><p class="mobile1">1. Where do I find the Tickets?</p></a>
+          <a  class="a" href="mobile.html"><p class="mobile1">2. Does your flight have Trasit or Connecting Flights?</p></a>
+          <a class="a" href="mobile.html"><p class="mobile1">2. Fares for foreigners are Different or same?</p></a>
+        </div>
+        <div class="Baggage">
+          <h4 class="mobileq">Baggage</h4>
+          <a class="a" href="mobile.html"><p class="mobile1">1. What is my Baggage Allowance?</p></a>
+          <a class="a" href="mobile.html"><p class="mobile1">2. Should I have to pay extra for my Hand Carry?</p></a>
+        </div>
+        <div class="checkin1">
+          <h4 class="mobileq">At Airport</h4>
+          <a  class="a" href="mobile.html"><p class="mobile1">1. Where can I go for Check-in</p></a>
+          <a class="a" href="mobile.html"><p class="mobile1">2. Where to find the Timetable?</p></a>
         </div>
       </div>
-      <!--menu bar ends here-->
-  <section class="main-body">
-     <!--<div class="flight-booking"><h2>Frame code goes here</h2></div>
-     <div class="picture">
-      slide picture
-     </div>-->
-
     </section>
-   <!--This is a footer section all tags goes for footer-->
-  <!--This is a footer section all tags goes for footer-->
-   <!-- <div class="footer-down">
+    <div class="form3">
+      <form method="post">
+      <!--Form method is added-->
+        <fieldset class="enquiry">
+          <!--Fieldset is used to give the static form a platform with a border-->
+          <legend class="legen">Contact Form</legend>
+          <!--A title to the fieldset is given-->
+          <br>
+          <h3>
+          <label class="name">First Name:</label>
+          <br>
+          <input type="text" name="name" placeholder="First Name" required>
+          <br>
+          <label>Last Name:</label>
+          <br>
+          <input type="text" name="name" placeholder="Last Name" required>
+          <br>
+          <label class="name">Email:</label>
+          <br>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <!--The input areas are accordingly labeled and the input types are defined-->
+          <br>
+          <label class="name">Message:</label>
+          <br>
+          <textarea name="message" rows="3" placeholder="Enter Your Messege" required></textarea>
+          <!--Textarea for messages is added here-->
+          <br>
+          <input type="submit" name="save" value="Send Request">
+          <!--A submit button is included-->
+          </h3>
+        </fieldset>
+      </form>     
+    </div>
+    <div class="footer-down">
+     <div class="privacy">
+      <h4>Information Service</h4>
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="Contact.html">Support</a></p>
+        <p><a href="#">Services</a></p>
+        <p><a href="#">Legal</a></p>
+        <p><a href="#">Baggage handling</a></p>
+     </div>
       <div class="contact-info">
-        <h3>Contact Info</h3>
-        <ul>
-          <li>BudgetFlights, Trade Tower, A21
-            United Kingdom.</li>
-            <li>P.O. Box: 0000</li>
-          <li><img src="images/mail.png" alt="mail">info@budgetflights.com</li>
-          <li><img src="images/phone.png" alt="phone">(+1)000000</li>
-          <li><img src="images/fax.png" alt="fax">(+1)100000</li>
-        </ul>
+        <h4>Contact Info</h4>
+        <p>BudgetFlights, Trade Tower, A21 United Kingdom. </p>
+      <p> P.O. Box: 0000</p>
+      <p>+1-000000,111111</p>
+      <p> info@budgetflights.com</p>
       </div>
-      <div class="social-media">
-        <h3>Find us on</h3>
-        <ul>
-          <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook"/></a></li>
-          <li><a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram"/></a></li>
-          <li><a href="https://www.youtube.com"><img src="images/youtube.png" alt="youtube"/></a></li>
-          <li><a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter"/></a></li>
-        </ul>
-      </div>
+      
       <div class="newsletter">
-        <h3> Subscribe newsletter for offers</h3>
+        <h4> Subscribe newsletter for latest offers</h4>
       <form method="post" action="flight.html">
-          <p><label>Full Name</label><br/><input type="text" name="Full-name"></p>
-          <p><label>Email</label><br/><input type="Email" name="Email"></p>
-          <p><input type="submit" name="submit"></p>
+          <p><label>First Name</label><br/><input type="text" name="Full-name" placeholder="john" required="required"></p>
+          <p><label>Last Name</label><br/><input type="text" name="Last-name" placeholder="May" required="required"></p>
+          <p><label>Email</label><br/><input type="Email" name="Email" placeholder="example@email.com" required="required"></p>
+          <p><input type="submit" name="Subscribe-button" value="Subscribe"></p>
         </form>
       </div>
-    </div>-->
-      
+    </div>
       <footer>
         <p>Copyright &copy; Budgetflights 2018. All right reserved.
       </p>

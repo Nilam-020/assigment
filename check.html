@@ -1,101 +1,117 @@
-<!--This line is for HTML 5-->
 <!DOCTYPE html>
+<!--This line is for HTML 5-->
 <html lang="en" dir="ltr">
 <!--head starts-->
-  <head>
-    <!--this enables the unicode feature-->
-    <meta charset="utf-8">
-    <!--webpage title starts and ends-->
-    <title>Home</title>
-    <!--link main css in html-->
-    <link rel="shortcut icon" href="images/favicon.png"/>
-    <link type="text/css" rel="stylesheet" href="css/master.css"/>
-  </head>
-  <!--head ends-->
-  <!--starts of body-->
-  <body>
-  <!--header starts-->
-    <header>
-  <!--div class starts-->
-     
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="logo" title="budgetflights" /></a>
-      </div>
-       <div class="lang">
-        <ul>
-          <li>Nepal-English</li>
-        </ul>
-        
-      </div>
-    <!--div class ends-->
+<head>
+<!--this enables the unicode feature-->
+<title>Baggage Information</title>
+<meta charset="utf-8">
+<!--webpage title starts and ends-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--This makes the total width equal to the device width-->
 
+<link rel="shortcut icon" href="images/favicon.png"/>
+<link type="text/css" rel="stylesheet" href="css/master.css"/>
+<!--link main css in html-->
+</head>
+<!--head ends-->
+<!--starts of body-->
+<body>
+ 
 
-    </header>
-  <!--header ends-->
-  <!--<div class="logo">
-        <a href="index.html"><img src="images/master.png" alt="logo" title="budgetflights" /></a>
-      </div>-->
-      <div class="main">
-      
-         <div class="menubar">
-          <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="about.html">About Us</a></li>
-           <li><a href="status.html">Flight Status</a></li>
-           <li><a href="flight.html">Flight Information</a></li>
-           <li><a href="mobile.html">Mobile Apps</a></li>
-           <li><a href="explore.html">Explore</a></li>
-           <li><a href="check.html">Check-in</a></li>
-           <li><a href="support.html">Support</a></li>
+<!--header starts-->
+<header>
+  <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="logo" title="budgetflights" /></a> </div>
+  <div class="search-1">
+  <form method="post" action="mobile.html">
+    <p><input type="text" name="advance-search">  <input type="submit" name="submit" value="Search"> </p>
+  </form>
+  <select class="lang">
+    <option value="austria">Austria-English</option>
+    <option value="austria">Germany-English</option>
+    <option value="austria">England-English</option>
+    <option value="austria">Scotland-English</option>
+  </select>
+ </div>
+  <!--div class ends--> 
+</header>
+<!--header ends-->
+
+<div class="menubar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="status.html">Arrival and Departures</a></li>
+    <li><a href="flight.html">Flight Information</a></li>
+    <li><a href="mobile.html">Mobile Apps</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <li><a href="check.html">Check-in Information</a></li>
+    <li><a href="support.html">FAQ/Help</a>
+         <ul>
+            <li><a href="support.html">Enquiry</a></li>
+            <li><a href="mobile.html">Downloads</a></li>
           </ul>
-        </div>
-      </div>
-      <!--menu bar ends here-->
-    <section class="main-body">
-     <!--<div class="flight-booking"><h2>Frame code goes here</h2></div>
-     <div class="picture">
-      slide picture
-     </div>-->
+  </ul>
+</div>
+        <!--menu bar ends here-->
+        <div class="check-in-1">
+          <div class="checkin-1-para"> <p>Before you plan to go with BudgetFlights Let's Check 
+            everything you need in  your Journey!</p>
+          </div>
+          <div class="get-ready">
+            <h2>Being Ready</h2>
+            <p>We want to make your journey enjoyable,memorable and hastle-free with BudgetFlights.
+              To make your trip perfect with us from the day you book a flight, we don't want you will leave with no-detail until you return back home.
+            </p>
+          </div>
+          <div class="document">
+            <h2>Passport and Documents Requiremnt</h2>
+              <p>Before you move to another country make sure you have the visa of the travelling Country if you
+              are not a EEA/EEU member or have not valid schengen visa to enter.</p>
+              <p>Know your VISA type to be hastle free and make your trip enjoyable.</p>
 
-    </section>
-   <!--This is a footer section all tags goes for footer-->
-   <!-- <div class="footer-down">
-      <div class="contact-info">
-        <h3>Contact Info</h3>
-        <ul>
-          <li>BudgetFlights, Trade Tower, A21
-            United Kingdom.</li>
-            <li>P.O. Box: 0000</li>
-          <li><img src="images/mail.png" alt="mail">info@budgetflights.com</li>
-          <li><img src="images/phone.png" alt="phone">(+1)000000</li>
-          <li><img src="images/fax.png" alt="fax">(+1)100000</li>
-        </ul>
+            </ul>
+          </div>
+          <div class="check-in-airport">
+            <p class="checkinairport">Check in Deadlines are different in every airport so We recommend you to visit as per the country 
+            airport rule you are currently at.</p>
+          </div>
+          <div class="online-check-in">
+            <p class="checkinairport">You can do get notification through our mobile app or can check in deadline 
+            can be found in our timetable.</p>
+          </div>
+          <div class="mobile-app">
+            <h1 class="download12">Get the Lasted Infomation from our Mobile apps</h1>
+            <a href="http://www.playstore.com"><img src="images/country/android.png" alt="android"title="android app"></a>
+            <a href="http://www.apple.com/store"><img src="images/country/ios.png" alt="android"title="android app"></a>
+          </div>
+          <div class="baggage-allowance">
+            <h1>Baggage Allowance</h1>
+            <p> The Following information helps you to determine the number of quantity and the weight of bag
+            or luggage that are allowed in the flight.</p>
+            <p> Please check your exact baggage regulations, it may vary according to your flight route, cabin class ; online or in your ticket information for applicable free baggage allowance and and Excess Baggage Charge. </p>
+          </div>
+          <div class="baggage-allowance1">
+            <div class="form1">
+              <h2 class="form1a">Baggage Allowed To/From</h2>
+                <p class="form1a1">UK to Destinaton Country</p>
+                <p>Business Class: 25 KG</p>
+                <p>Economy Class: 20 KG</p>
+              <h2 class="form1b">Baggage Allowed To/From</h2>
+                <p class="form1a1">Destination to UK</p>
+                <p>Business Class: 20 KG</p>
+                <p>Economy Class: 15 KG</p>
+                 <br/>
+            <p class="infant"> Infant baggage charge is free upto 10KG.</p>
+            </div> 
+       </div>
       </div>
-      <div class="social-media">
-        <h3>Find us on</h3>
-        <ul>
-          <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook"/></a></li>
-          <li><a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram"/></a></li>
-          <li><a href="https://www.youtube.com"><img src="images/youtube.png" alt="youtube"/></a></li>
-          <li><a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter"/></a></li>
-        </ul>
-      </div>
-      <div class="newsletter">
-        <h3> Subscribe newsletter for offers</h3>
-      <form method="post" action="flight.html">
-          <p><label>Full Name</label><br/><input type="text" name="Full-name"></p>
-          <p><label>Email</label><br/><input type="Email" name="Email"></p>
-          <p><input type="submit" name="submit"></p>
-        </form>
-      </div>
-    </div>
-      -->
-      <footer>
-        <p>Copyright &copy; Budgetflights 2018. All right reserved.
-      </p>
-      </footer>
-                
-  </body>
-  <!--body ends-->
+        </div>
+        <footer>
+          <p>Copyright &copy; Budgetflights 2018. All right reserved.
+          </p>
+        </footer>           
+      </body>
+    <!--body ends-->
+  <!--html close-->
 </html>
-<!--html close-->

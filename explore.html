@@ -1,96 +1,137 @@
-<!--This line is for HTML 5-->
 <!DOCTYPE html>
+<!--This line is for HTML 5-->
 <html lang="en" dir="ltr">
 <!--head starts-->
-  <head>
-    <!--this enables the unicode feature-->
-    <meta charset="utf-8">
-    <!--webpage title starts and ends-->
-    <title>Home</title>
-    <!--link main css in html-->
-    <link rel="shortcut icon" href="images/favicon.png"/>
-    <link type="text/css" rel="stylesheet" href="css/master.css"/>
-  </head>
-  <!--head ends-->
-  <!--starts of body-->
-  <body>
-  <!--header starts-->
-    <header>
-  <!--div class starts-->
-     
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="logo" title="budgetflights" /></a>
-      </div>
-       <div class="lang">
-        <ul>
-          <li>Nepal-English</li>
-        </ul>
-        
-      </div>
-    <!--div class ends-->
+<head>
+<!--this enables the unicode feature-->
+<title>Explore</title>
+<meta charset="utf-8">
+<!--webpage title starts and ends-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--This makes the total width equal to the device width-->
 
+<link rel="shortcut icon" href="images/favicon.png"/>
+<link type="text/css" rel="stylesheet" href="css/master.css"/>
+<!--link main css in html-->
+</head>
+<!--head ends-->
+<!--starts of body-->
+<body>
+ 
 
-    </header>
-  <!--header ends-->
-  <!--<div class="logo">
-        <a href="index.html"><img src="images/master.png" alt="logo" title="budgetflights" /></a>
-      </div>-->
-      <div class="main">
-      
-         <div class="menubar">
-          <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="about.html">About Us</a></li>
-           <li><a href="status.html">Flight Status</a></li>
-           <li><a href="flight-information.html">Flight Information</a></li>
-           <li><a href="mobile.html">Mobile Apps</a></li>
-           <li><a href="explore.html">Explore</a></li>
-           <li><a href="check.html">Check-in</a></li>
-           <li><a href="support.html">Support</a></li>
+<!--header starts-->
+<header>
+  <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="logo" title="budgetflights" /></a> </div>
+  <div class="search-1">
+  <form method="post" action="mobile.html">
+    <p><input type="text" name="advance-search">  <input type="submit" name="submit" value="Search"> </p>
+  </form>
+  <select class="lang">
+    <option value="austria">Austria-English</option>
+    <option value="austria">Germany-English</option>
+    <option value="austria">England-English</option>
+    <option value="austria">Scotland-English</option>
+  </select>
+ </div>
+  <!--div class ends--> 
+</header>
+<!--header ends-->
+
+<div class="menubar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="status.html">Arrival and Departures</a></li>
+    <li><a href="flight.html">Flight Information</a></li>
+    <li><a href="mobile.html">Mobile Apps</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <li><a href="check.html">Check-in Information</a></li>
+    <li><a href="support.html">FAQ/Help</a>
+         <ul>
+            <li><a href="support.html">Enquiry</a></li>
+            <li><a href="mobile.html">Downloads</a></li>
           </ul>
+  </ul>
+</div>
+      <!--menu bar ends here-->
+  	<div class="container-expl">
+  	<div class="container-expl-nav">
+  		<h2 class="explore-nav">Explore your jouryney</h2>
+  			<p>Widen your world</p>
+  	</div>
+  </div>
+    <h3 class="book-heading">
+     <span>Book</span>
+      BudgetFlights
+     </h3>
+  	 <!--container-expl-image-search elements start-->
+      <div class="images1">
+        <div class="destinationimg4">
+          <a href="flight.html"><img src="images/country/Belgium.jpg" alt="Belgium"></a>
+          <h3 class="info2"><a href="flight.html">Paris,France</a></h3>
+        </div>
+        <div class="destinationimg5">
+          <a href="flight.html"><img src="images/country/France.jpg" alt="France"/></a>
+          <h3 class="info2"><a href="flight.html">Brussels,Belgium</a></h3>
+        </div>
+        <div class="destinationimg6">
+          <a href="flight.html"><img src="images/country/Germany.jpg" alt="Germany"></a>
+          <h3 class="info2"><a href="flight.html">Berlin,Germany</a></h3>
+        </div>
+            <div class="destinationimg4">
+          <a href="flight.html"><img src="images/country/Austria.jpg" alt="Austria"></a>
+          <h3 class="info2"><a href="flight.html">Prague,Austria</a></h3>
+        </div>
+        <div class="destinationimg5">
+          <a href="flight.html"><img src="images/country/Switzerland.jpg" alt="Switzerland"/></a>
+          <h3 class="info2"><a href="flight.html">Brussels,Belgium</a></h3>
+        </div>
+        <div class="destinationimg6">
+          <a href="flight.html"><img src="images/country/Sweden.jpg" alt="Sweden"></a>
+          <h3 class="info2"><a href="flight.html">Berlin,Germany</a></h3>
+        </div>
+             <div class="destinationimg4">
+          <a href="flight.html"><img src="images/country/Turkey.jpg" alt="Turkey"></a>
+          <h3 class="info2"><a href="flight.html">Istanbul,Turkey</a></h3>
+        </div>
+        <div class="destinationimg5">
+          <a href="flight.html"><img src="images/country/Poland.jpg" alt="Poland"/></a>
+          <h3 class="info2"><a href="flight.html">Brussels,Belgium</a></h3>
+        </div>
+        <div class="destinationimg6">
+          <a href="flight.html"><img src="images/country/Russia.jpg" alt="Russia"></a>
+          <h3 class="info2"><a href="flight.html">Moscow,Russia</a></h3>
         </div>
       </div>
-      <!--menu bar ends here-->
-   <section class="main-body">
-     <!--<div class="flight-booking"><h2>Frame code goes here</h2></div>
-     <div class="picture">
-      slide picture
-     </div>-->
-
-    </section>
-   <!--This is a footer section all tags goes for footer-->
-    <!--This is a footer section all tags goes for footer-->
-   <!-- <div class="footer-down">
+      </div>
+<!--image container element ends here-->
+   <div class="footer-down">
+     <div class="privacy">
+      <h4>Information Service</h4>
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="Contact.html">Support</a></p>
+        <p><a href="#">Services</a></p>
+        <p><a href="#">Legal</a></p>
+        <p><a href="#">Baggage handling</a></p>
+     </div>
       <div class="contact-info">
-        <h3>Contact Info</h3>
-        <ul>
-          <li>BudgetFlights, Trade Tower, A21
-            United Kingdom.</li>
-            <li>P.O. Box: 0000</li>
-          <li><img src="images/mail.png" alt="mail">info@budgetflights.com</li>
-          <li><img src="images/phone.png" alt="phone">(+1)000000</li>
-          <li><img src="images/fax.png" alt="fax">(+1)100000</li>
-        </ul>
+        <h4>Contact Info</h4>
+        <p>BudgetFlights, Trade Tower, A21 United Kingdom. </p>
+      <p> P.O. Box: 0000</p>
+      <p>+1-000000,111111</p>
+      <p> info@budgetflights.com</p>
       </div>
-      <div class="social-media">
-        <h3>Find us on</h3>
-        <ul>
-          <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook"/></a></li>
-          <li><a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram"/></a></li>
-          <li><a href="https://www.youtube.com"><img src="images/youtube.png" alt="youtube"/></a></li>
-          <li><a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter"/></a></li>
-        </ul>
-      </div>
+      
       <div class="newsletter">
-        <h3> Subscribe newsletter for offers</h3>
+        <h4> Subscribe newsletter for latest offers</h4>
       <form method="post" action="flight.html">
-          <p><label>Full Name</label><br/><input type="text" name="Full-name"></p>
-          <p><label>Email</label><br/><input type="Email" name="Email"></p>
-          <p><input type="submit" name="submit"></p>
+          <p><label>First Name</label><br/><input type="text" name="Full-name" placeholder="john" required="required"></p>
+          <p><label>Last Name</label><br/><input type="text" name="Last-name" placeholder="May" required="required"></p>
+          <p><label>Email</label><br/><input type="Email" name="Email" placeholder="example@email.com" required="required"></p>
+          <p><input type="submit" name="Subscribe-button" value="Subscribe"></p>
         </form>
       </div>
-    </div>-->
-      
+    </div>
       <footer>
         <p>Copyright &copy; Budgetflights 2018. All right reserved.
       </p>

@@ -1,96 +1,178 @@
-<!--This line is for HTML 5-->
 <!DOCTYPE html>
+<!--This line is for HTML 5-->
 <html lang="en" dir="ltr">
 <!--head starts-->
-  <head>
-    <!--this enables the unicode feature-->
-    <meta charset="utf-8">
-    <!--webpage title starts and ends-->
-    <title>Home</title>
-    <!--link main css in html-->
-    <link rel="shortcut icon" href="images/favicon.png"/>
-    <link type="text/css" rel="stylesheet" href="css/master.css"/>
-  </head>
-  <!--head ends-->
-  <!--starts of body-->
-  <body>
-  <!--header starts-->
-    <header>
-  <!--div class starts-->
-     
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="logo" title="budgetflights" /></a>
-      </div>
-       <div class="lang">
-        <ul>
-          <li>Nepal-English</li>
-        </ul>
-        
-      </div>
-    <!--div class ends-->
+<head>
+<!--this enables the unicode feature-->
+<title>Arrival and Departure</title>
+<meta charset="utf-8">
+<!--webpage title starts and ends-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--This makes the total width equal to the device width-->
 
+<link rel="shortcut icon" href="images/favicon.png"/>
+<link type="text/css" rel="stylesheet" href="css/master.css"/>
+<!--link main css in html-->
+</head>
+<!--head ends-->
+<!--starts of body-->
+<body>
+ 
 
-    </header>
-  <!--header ends-->
-  <!--<div class="logo">
-        <a href="index.html"><img src="images/master.png" alt="logo" title="budgetflights" /></a>
-      </div>-->
-      <div class="main">
-      
-         <div class="menubar">
-          <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="about.html">About Us</a></li>
-           <li><a href="status.html">Flight Status</a></li>
-           <li><a href="flight.html">Flight Information</a></li>
-           <li><a href="mobile.html">Mobile Apps</a></li>
-           <li><a href="explore.html">Explore</a></li>
-           <li><a href="check.html">Check-in</a></li>
-           <li><a href="support.html">Support</a></li>
+<!--header starts-->
+<header>
+  <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="logo" title="budgetflights" /></a> </div>
+  <div class="search-1">
+  <form method="post" action="mobile.html">
+    <p><input type="text" name="advance-search">  <input type="submit" name="submit" value="Search"> </p>
+  </form>
+  <select class="lang">
+    <option value="austria">Austria-English</option>
+    <option value="austria">Germany-English</option>
+    <option value="austria">England-English</option>
+    <option value="austria">Scotland-English</option>
+  </select>
+ </div>
+  <!--div class ends--> 
+</header>
+<!--header ends-->
+
+<div class="menubar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="status.html">Arrival and Departures</a></li>
+    <li><a href="flight.html">Flight Information</a></li>
+    <li><a href="mobile.html">Mobile Apps</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <li><a href="check.html">Check-in Information</a></li>
+    <li><a href="support.html">FAQ/Help</a>
+         <ul>
+            <li><a href="support.html">Enquiry</a></li>
+            <li><a href="mobile.html">Downloads</a></li>
           </ul>
-        </div>
-      </div>
+  </ul>
+</div>
       <!--menu bar ends here-->
-   <section class="main-body">
-     <!--<div class="flight-booking"><h2>Frame code goes here</h2></div>
-     <div class="picture">
-      slide picture
-     </div>-->
-
-    </section>
-   <!--This is a footer section all tags goes for footer-->
-  <!--This is a footer section all tags goes for footer-->
-   <!-- <div class="footer-down">
-      <div class="contact-info">
-        <h3>Contact Info</h3>
-        <ul>
-          <li>BudgetFlights, Trade Tower, A21
-            United Kingdom.</li>
-            <li>P.O. Box: 0000</li>
-          <li><img src="images/mail.png" alt="mail">info@budgetflights.com</li>
-          <li><img src="images/phone.png" alt="phone">(+1)000000</li>
-          <li><img src="images/fax.png" alt="fax">(+1)100000</li>
-        </ul>
-      </div>
-      <div class="social-media">
-        <h3>Find us on</h3>
-        <ul>
-          <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook"/></a></li>
-          <li><a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram"/></a></li>
-          <li><a href="https://www.youtube.com"><img src="images/youtube.png" alt="youtube"/></a></li>
-          <li><a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter"/></a></li>
-        </ul>
-      </div>
-      <div class="newsletter">
-        <h3> Subscribe newsletter for offers</h3>
-      <form method="post" action="flight.html">
-          <p><label>Full Name</label><br/><input type="text" name="Full-name"></p>
-          <p><label>Email</label><br/><input type="Email" name="Email"></p>
-          <p><input type="submit" name="submit"></p>
-        </form>
-      </div>
-    </div>-->
       
+      <div class="flight-status">
+        <h1 class="track">Track Flight</h1>
+        <br/>
+        <p class="information">BudgetFlights operated flight information is available for our valued Customers.
+        Please provide the Flight Number and Date to receive the flight information.</p>
+        </div>
+        <div class="form2">
+          <form method="post">
+      <!--Form method is added-->
+        <fieldset>
+          <!--Fieldset is used to give the static form a platform with a border-->
+          <legend>Flight Information</legend>
+          <!--A title to the fieldset is given-->
+          <h3>
+          <label>flight Number:</label>
+          <br/>
+          <input type="text" name="name" placeholder="First Name" required>
+          <br/>
+          <label>Date:</label>
+          <br/>
+          <input type="datetime-local" name="name" placeholder="Last Name" required>
+          <br/>
+          <input type="submit" name="save" value="Search">
+          <!--A submit button is included-->
+          </h3>
+        </fieldset>
+      </form>     
+      </div>
+      <div class="arrival-depart">
+        <div class="sidebar">
+          <h2 class="sidebar-1">Customer Care</h2>
+          <p>We are here to help you on your concerns. Come to us and we will respond as faster as we can</p>
+          <img src="images/country/support.png" alt="customer-care"/>
+          <h4>Corporate Office</h4>
+          <p>BudgetFlights, Trade Tower, A21 United Kingdom. </p>
+          <p> P.O. Box: 0000</p>
+          <p>+1-000000,111111</p>
+          <p> info@budgetflights.com</p>
+        </div>
+        <div class="to">
+          <fieldset>
+           <h2 class="arival-text">Arrivals and Departure</h2>
+          <table>
+              <tr>
+                <th>Flight </th>
+                <th>Origin</th> 
+                <th>To</th>
+                <th>Depart</th>
+                <th>Arrival</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>BF101</td>
+                <td>Switzerland</td> 
+                <td>UK</td>
+                <td>10:00</td>
+                <td>14:00</td>
+                <td>Boarding</td>
+              </tr>
+              <tr>
+                <td>BF101 </td>
+                <td>United Kingdom</td> 
+                <td>Germany</td>
+                <td>10:05</td>
+                <td>13:00</td>
+                <td>Landed</td>
+              </tr>
+               <tr>
+                <td>BF211 </td>
+                <td>Russia</td> 
+                <td>United Kingdom</td>
+                <td>10:05</td>
+                <td>13:00</td>
+                <td>Landed</td>
+              </tr>
+               <tr>
+                <td>BF212 </td>
+                <td>Austria</td> 
+                <td>United Kingdom</td>
+                <td>11:05</td>
+                <td>14:00</td>
+                <td>Delayed</td>
+              </tr>
+              <tr>
+                <td>BF212 </td>
+                <td>Austria</td> 
+                <td>United Kingdom</td>
+                <td>11:05</td>
+                <td>14:00</td>
+                <td>Delayed</td>
+              </tr>
+              <tr>
+                <td>BF213 </td>
+                <td>Austria</td> 
+                <td>United Kingdom</td>
+                <td>11:05</td>
+                <td>14:00</td>
+                <td>On-Time</td>
+              </tr>
+              <tr>
+                <td>BF214 </td>
+                <td>Austria</td> 
+                <td>United Kingdom</td>
+                <td>11:05</td>
+                <td>14:00</td>
+                <td>On-Time</td>
+              </tr>
+              <tr>
+                <td>BF215 </td>
+                <td>Austria</td> 
+                <td>United Kingdom</td>
+                <td>12:05</td>
+                <td>13:20</td>
+                <td>On-Time</td>
+              </tr>
+            </table>
+            </fieldset>
+        </div>
       <footer>
         <p>Copyright &copy; Budgetflights 2018. All right reserved.
       </p>
